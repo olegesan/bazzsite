@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="urf-8">
+  <meta name="viewport" content="device=width">
+  <link rel="stylesheet" href="/style_sheets/style_project_myrecepie.css" type="text/css"/>
+  <title> My recepies</title>
+</head>
+<body>
+  <div id="fc">
+  <header><h1 id="header"> My recepies</h1>
+  <nav><ul>
+    <li><a href="#pizza"> Pizza</a></li>
+    <li><a href="#soup"> Soup</a></li>
+    <li><a href="#makaroni_navy_style"> Makaroni Navy Style</a></li>
+    </ul>
+   
+  </nav>
+  </header>
+   
+  <article id="pizza">
+    <hr>
+    <h2 > Pizza</h2>
+    <div class='container'>
+    <img src="/images/pizza.png" alt='image of a pizza made in minimalistic style' title="yummy, huh?" width="300" class='image'>
+    <div class='overlay'>
+      <div class='text'> This is a pizza</div>
+    </div>
+    </div> 
+    <p>Who doesn't like pizzas? Show me that person. </br>
+    Now when we confirmed our passion for pizzas, let's make a great one</p>
+    <h3>Ingridients</h3>
+    <div class="table1">
+      <table class="table1">
+        <caption colspan='2'>Ingridients</caption>
+        <tbody>
+          <tr class="row1"><td class="ingridient"> dough</td><td class="amount">500g</td></tr>
+          <tr class="row2"><td class="ingridient"> sausage</td><td class="amount">200g</td></tr>
+          <tr calss="row3"><td class="ingridient">secret ingridient number one</td><td class="amount">one pinch</td></tr>
+          <tr class="row4"><td class="ingridient">sesecret ingridient number two</td><td class="amount">30 min</td>
+        </tbody>
+      </table>
+        </div>
+   
+    <h3>Steps</h3>
+    <ol><li>step one</li>
+    <li>step two</li>
+    <li><span title="I meant step three"> step four</span></li>
+    </ol>
+  </article>
+  <hr>
+  <article  id="soup">
+    <h2>Soup</h2>
+    <div class='container'>
+    <img src="/images/soup.jpg" alt="minimalistic style soup" title='your granny loves it' width="300">
+    <div class='overlay'>
+      <div class='text'> This is soup</div>
+    </div>
+    </div>
+    <p>Cut the crap, let's jump right into it</p>
+    <h3>Steps</h3>
+    <ul><li>first</li>
+    <li> second</li>
+    <li> third</li>
+    </ul>
+  </article>
+  <hr>
+  <article id="makaroni_navy_style">
+    <h2 > Makaroni Navy Style</h2>
+
+
+   
+
+
+<img id="myImg" src="http://clipart-library.com/img1/782601.jpg" alt="the tastiest meal you never had" width="300" >
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+
+
+
+    <p> Only gifted people can see this dish, and a few can cook this masterpiece seems you are not among us, so come back when you pump up your skills<p>
+  </article>
+  </div>
+</body>
+<footer>
+  <hr>
+  <br>
+
+  <details> <summary> navigation panel </summary>
+      <ul>
+        <li><a href="page2.html"> fun stuff is here</a></li>
+        <li><a href="index.html"> time machine to the past</a></li>
+        <li><a href="world_of_images.html"> I wait for you here</a></li>
+      </ul>
+   </footer>
+</html> 
